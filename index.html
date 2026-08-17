@@ -4,77 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="tiktok-developers-site-verification" content="8PQsJMGeoCFefvA4B7bNf9GIELprg7gc">
-    <title>Grow A Fish - Official Website & Privacy Policy</title>
+    <title>Grow A Fish - Official Site & Privacy Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #00b4d8;
+            --primary-dark: #0077b6;
+            --accent: #ffb703;
+            --bg-dark: #03045e;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --text-main: #0f172a;
+            --text-muted: #475569;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9fbfd;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(180deg, #03045e 0%, #0077b6 50%, #90e0ef 100%);
+            min-height: 100vh;
+            color: var(--text-main);
+            line-height: 1.7;
         }
-        header {
-            background: linear-gradient(135deg, #0077b6, #00b4d8);
-            color: white;
-            padding: 40px 20px;
-            border-radius: 12px;
+
+        .hero {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 80px 20px 60px;
+            color: white;
+            position: relative;
+            overflow: hidden;
         }
-        h1 { margin: 0 0 10px 0; font-size: 2.5rem; }
-        p.subtitle { font-size: 1.2rem; opacity: 0.95; }
+
+        .hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+            text-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #ffffff, #caf0f8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .badge-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 10px 22px;
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
+
         .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 25px;
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 45px;
+            margin-bottom: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
-        h2 { color: #0077b6; border-bottom: 2px solid #e0f2fe; padding-bottom: 8px; }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e0f2fe;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: #1e293b;
+            margin: 25px 0 12px;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-size: 1.02rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 0.95rem;
+            word-break: break-all;
+        }
+
         footer {
             text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 0.9rem;
+            padding: 40px 20px;
+            color: white;
+            font-size: 0.95rem;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <header>
+
+    <section class="hero">
         <h1>🐠 Grow A Fish</h1>
-        <p class="subtitle">Grow A Fish combines the relaxing vibes of a virtual pet simulator with retro mini-games and real-time multiplayer challenges.</p>
-    </header>
+        <p>Combining virtual pet care with high-speed retro arcade mini-games and real-time multiplayer tank challenges.</p>
+        <div class="badge-bar">
+            <div class="badge">🎮 Mobile Arcade & Pet Sim</div>
+            <div class="badge">🔒 End-to-End Encrypted</div>
+            <div class="badge">✨ 3D Custom Fish Avatars</div>
+        </div>
+    </section>
 
-    <div class="card">
-        <h2>Verification Status</h2>
-        <p><strong>TikTok Developer Verification:</strong> <code>tiktok-developers-site-verification=8PQsJMGeoCFefvA4B7bNf9GIELprg7gc</code></p>
-    </div>
-
-    <div class="card">
-        <h2>Privacy Policy</h2>
-        <p><strong>Effective Date:</strong> May 27, 2026</p>
-        <p>This privacy policy applies to the Grow A Fish mobile application and related services operated by <strong>Elomar Studio</strong> ("Service Provider").</p>
+    <div class="container">
         
-        <h3>Data Controller Information</h3>
-        <p><strong>Name:</strong> Elomar Studio<br>
-        <strong>Address:</strong> Bogøgade 6, 1.th, 9000 Aalborg<br>
-        <strong>Email:</strong> elomarstudio@gmail.com</p>
+        <div class="card">
+            <h2>Developer & Domain Verification</h2>
+            <p>This official site hosts domain ownership verification records for platform integrations (including TikTok for Developers Content Posting API).</p>
+            <div class="highlight-box">
+                tiktok-developers-site-verification=8PQsJMGeoCFefvA4B7bNf9GIELprg7gc
+            </div>
+        </div>
 
-        <h3>What Information We Collect</h3>
-        <p><strong>User Provided Information:</strong> Account credentials (email, username via Supabase), fish data, tank configurations, in-game currency, and inventory.</p>
-        <p><strong>Social & End-to-End Encryption:</strong> In-game private messages are encrypted using <strong>X25519</strong> and <strong>AES-GCM-256</strong>. Private keys remain strictly local on your device.</p>
-        <p><strong>TikTok & Social Media Integration:</strong> OAuth tokens used solely for user-initiated video clip publishing via TikTok Content Posting API (<code>video.upload</code> and <code>video.publish</code>).</p>
-    </div>
+        <div class="card">
+            <h2>Privacy Policy</h2>
+            <p><strong>Effective Date:</strong> May 27, 2026</p>
+            <p>This Privacy Policy applies to the <strong>Grow A Fish</strong> mobile application operated by <strong>Elomar Studio</strong> ("Service Provider"). We are dedicated to respecting your privacy and protecting your personal data.</p>
+            
+            <h3>1. Data Controller Information</h3>
+            <p><strong>Entity:</strong> Elomar Studio<br>
+            <strong>Address:</strong> Bogøgade 6, 1.th, 9000 Aalborg, Denmark<br>
+            <strong>Contact Email:</strong> elomarstudio@gmail.com</p>
 
-    <div class="card">
-        <h2>Terms & Conditions</h2>
-        <p>By downloading or using Grow A Fish, you agree to these Terms and Conditions operated by Elomar Studio. You are granted a limited, non-exclusive, revocable license to install and play the application for personal entertainment.</p>
+            <h3>2. Information We Collect & How It's Used</h3>
+            <ul>
+                <li><strong>Account Credentials:</strong> Email address and username collected via our secure authentication provider (Supabase).</li>
+                <li><strong>Game State Data:</strong> Saved progress, unlocked fish skins, aquarium decorations, coins, and pearls.</li>
+                <li><strong>Encrypted In-Game Chat:</strong> Private messages are encrypted on-device using <strong>X25519 (ECDH)</strong> key exchange and <strong>AES-GCM-256</strong>. Private decryption keys never leave your phone.</li>
+                <li><strong>Social Media Sharing:</strong> OAuth authorization tokens processed strictly to upload user-selected gameplay highlights via TikTok Content Posting API (<code>video.upload</code> and <code>video.publish</code>).</li>
+            </ul>
+
+            <h3>3. Third-Party Services</h3>
+            <p>We work with trusted industry providers under strict Data Processing Agreements:</p>
+            <ul>
+                <li>Supabase (Database & Authentication)</li>
+                <li>Google Play Services</li>
+                <li>Firebase Analytics & Crashlytics</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Terms & Conditions</h2>
+            <p>By downloading or playing Grow A Fish, you agree to these Terms and Conditions governed by Elomar Studio.</p>
+            <h3>License & Acceptable Use</h3>
+            <p>You are granted a limited, non-exclusive, revocable license for personal, non-commercial entertainment. Cheating, reverse-engineering, harassment in multiplayer chat, or uploading malicious content is strictly prohibited.</p>
+        </div>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Elomar Studio. All rights reserved.</p>
+        <p>&copy; 2026 Elomar Studio. All rights reserved. | Grow A Fish Official Portal</p>
     </footer>
+
 </body>
 </html>
